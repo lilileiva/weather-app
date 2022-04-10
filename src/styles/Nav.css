@@ -1,0 +1,47 @@
+.nav {
+    display: flex;
+    justify-content: center;  
+}
+
+.navContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    color: aliceblue;
+    background-color: rgb(73, 73, 73);
+    border: 2px solid rgb(104, 104, 104);
+    border-radius: 10px;
+    width: 98%;
+    padding: 0 10px 0 10px;
+    margin: 10px 0 10px 0;
+}
+
+.logo-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo-title:hover {
+    color: rgb(148, 190, 190);
+}
+
+.logo-title h3 {
+    margin: 0;
+}
+
+.about-searchbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.btn-about {
+    margin-right: 10px;
+}
+
+img {
+    width: 25%;
+}
