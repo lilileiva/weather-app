@@ -1,36 +1,23 @@
 import "../styles/Card.css";
 
-export default function Card() {
-    return (
-        // <div>
-        //     <button>X</button>
-        //     <div className="card">
-        //         <h3><a href="">Card title</a></h3>
-        //         <div className="cardContent">
-        //             <div>
-        //                 <p>Min temp</p>
-        //                 <p>Max temp</p>
-        //             </div>
-        //             <img src="" alt="weather image" />
-        //         </div>
-        //     </div>
-        // </div>
 
-        <div class="card text-dark bg-light mb-3" >
-            <div class="card-header">
-                <h4 class="card-title">City name</h4>
-                <button class="btn btn-danger">X</button>
+export default function Card({min, max, name, img, onClose, id}) {
+    return (
+        <div className="card text-dark bg-light mb-3" >
+            <div className="card-header">
+                <h4 className="card-title">{name}</h4>
+                <button className="btn btn-danger" onClick={onClose}>X</button>
             </div>
             <div class="card-body">
                 <div className="temp">
-                    <p class="card-text">Min</p>
-                    <p class="card-text">temp</p>
+                    <p className="card-text">Min</p>
+                    <p className="card-text">{min}º</p>
                 </div>
                 <div className="temp">
-                    <p class="card-text">Max</p>
-                    <p class="card-text">temp</p>
+                    <p className="card-text">Max</p>
+                    <p className="card-text">{max}º</p>
                 </div>
-                <img src="" alt="weather image" />
+                <img src={"http://openweathermap.org/img/wn/"+img+"@2x.png"} alt="weather image" />
             </div>
         </div>
     );

@@ -4,25 +4,28 @@ import HappyCloud from "../img/happycloud.png";
 import "../styles/Nav.css";
 import SearchBar from "./SearchBar.jsx";
 
-export default function Nav() {
+
+export default function Nav({onSearch}) {
     return (
-        <Link to="/">
+        
             <div className="nav">
                 <div className="navContent">
-                    <div className="logo-title">
-                        <img src={HappyCloud} alt="logo" />
-                        <h3>Weather App</h3>
-                    </div>
+                    <Link to="/">
+                        <div className="logo-title">
+                            <img src={HappyCloud} alt="logo" />
+                            <h3>Weather App</h3>
+                        </div>
+                    </Link>
                     <div className="about-searchbar">
                         <Link to="/about">
                             <div className="btn-about">
-                                <button class="btn btn-outline-secondary">About</button>
+                                <button className="btn btn-outline-secondary">About</button>
                             </div>
                         </Link>
-                        <SearchBar />
+                        <SearchBar onSearch={onSearch} />
                     </div>
                 </div>
             </div>
-        </Link>
+        
     );
 }
