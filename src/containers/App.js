@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Routes, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import '../styles/App.css';
 import Nav from '../components/Nav.jsx';
 // import Footer from '../components/Footer.jsx';
@@ -56,11 +56,20 @@ export default function App() {
     <div className='app'>
       <Nav onSearch={onSearch} />
       <div className='appContent'>
-        <Routes>
-          <Route path="/" element={<Cards cities={cities} onClose={onClose} onSearch={onSearch} />} />
-          <Route path="/city/:id" element={<City /> } />
-          <Route path="/about" element={<About />} />
-        </Routes>
+          <Route exact path="/">
+            <Cards
+              cities={cities}
+              onClose={onClose}
+              onSearch={onSearch}
+            />
+          </Route>
+          <Route
+            exact path='/city/:id'
+            render={({match}) => <City city={onFilter(match.params.id)}/>}
+          />
+          <Route exact path="/about">
+            <About />
+          </Route>
       </div>
       {/* <Footer /> */}
     </div>

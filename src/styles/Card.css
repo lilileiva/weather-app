@@ -21,7 +21,13 @@
 }
 
 .card-title {
+    color: black;
     margin: 0;
+}
+
+.card-title:hover {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(57, 57, 57);
 }
 
 .card-body {
