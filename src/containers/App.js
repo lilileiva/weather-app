@@ -5,17 +5,18 @@ import Nav from '../components/Nav.jsx';
 // import Footer from '../components/Footer.jsx';
 import About from '../components/About.jsx';
 import Cards from '../components/Cards.jsx';
+import City from '../components/City.jsx';
 
 
 export default function App() {
 
   const [cities, setCities] = useState([]);
 
-  const apiKey = "371d994e710550d1f53a673a50f9c6f4";
+  const apiKey = process.env.REACT_APP_API_KEY;
 
   function onSearch(city) {
     fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`)
-      .then(r => r.json())
+      .then(response => response.json())
       .then((props) => {
         if(props.main !== undefined){
           const city = {
@@ -42,12 +43,22 @@ export default function App() {
       setCities(cities => cities.filter(c => c.id !== id));
     }
 
+    function onFilter(id) {
+      let city = cities.filter(c => c.id === parseInt(id));
+      if(city.length > 0) {
+          return city[0];
+      } else {
+          return null;
+      }
+    }
+
   return (
     <div className='app'>
       <Nav onSearch={onSearch} />
       <div className='appContent'>
         <Routes>
-          <Route path="/" element={<Cards cities={cities} onClose={onClose} />} />
+          <Route path="/" element={<Cards cities={cities} onClose={onClose} onSearch={onSearch} />} />
+          <Route path="/city/:id" element={<City /> } />
           <Route path="/about" element={<About />} />
         </Routes>
       </div>

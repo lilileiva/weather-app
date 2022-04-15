@@ -11,7 +11,7 @@ export default function SearchBar({onSearch}) {
     return (
         <form onSubmit={(e) => {
             e.preventDefault();
-                onSearch(city);
+            onSearch(city);
             }}>
                 <div class="input-group">
                 <input 
@@ -19,10 +19,11 @@ export default function SearchBar({onSearch}) {
                     placeholder="City..."
                     className="form-control"
                     value={city}
-                    onChange={handleInputChange}                  
+                    onChange={handleInputChange}
+                    required                  
                 />
 
-                <input type="submit" className="btn btn-outline-secondary" onChange={onSearch} value="Agregar" />
+                <input type="submit" className="btn btn-outline-secondary" onChange={onSearch} value="Add" />
             </div>
         </form>
     );
