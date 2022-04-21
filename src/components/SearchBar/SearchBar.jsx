@@ -1,30 +1,33 @@
 import React, { useState } from "react";
-import "../styles/SearchBar.css"
+import "./SearchBar.css"
 
 
 export default function SearchBar({onSearch}) {
-    const [city, setCity] = useState('');
+    const [input, setInput] = useState('');
+
+    const handleInputSubmit = (e) => {
+        e.preventDefault();
+        onSearch(input);
+        setInput('')
+    };
 
     const handleInputChange = (e) => {
-        setCity(e.target.value);
-    }
+        setInput(e.target.value);
+    };
+
     return (
-        <form onSubmit={(e) => {
-            e.preventDefault();
-            onSearch(city);
-            }}>
+        <form onSubmit={(e) => handleInputSubmit(e)}>
                 <div class="input-group">
                 <input 
                     type="text"
                     placeholder="City..."
                     className="form-control"
-                    value={city}
+                    value={input}
                     onChange={handleInputChange}
                     required                  
                 />
-
                 <input type="submit" className="btn btn-outline-secondary" onChange={onSearch} value="Add" />
             </div>
         </form>
     );
-}
+};

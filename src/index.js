@@ -1,7 +1,7 @@
 // import React from 'react';
 // import ReactDOM from 'react-dom';
 // import { BrowserRouter } from 'react-router-dom';
-// import './styles/index.css';
+// import './index.css';
 // import App from './containers/App.js';
 
 
@@ -16,7 +16,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import App from './containers/App.js';
-import './styles/index.css';
+import './index.css';
 
 
 const rootElement = document.getElementById("root");

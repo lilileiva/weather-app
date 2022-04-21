@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import HappyCloud from "../img/happycloud.png";
-import "../styles/Nav.css";
-import SearchBar from "./SearchBar.jsx";
+import HappyCloud from "../../img/happycloud.png";
+import "./Nav.css";
+import SearchBar from "../SearchBar/SearchBar.jsx";
 
 
 export default function Nav({onSearch}) {

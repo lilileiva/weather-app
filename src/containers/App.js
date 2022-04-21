@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { Route } from "react-router-dom";
-import '../styles/App.css';
-import Nav from '../components/Nav.jsx';
-// import Footer from '../components/Footer.jsx';
-import About from '../components/About.jsx';
-import Cards from '../components/Cards.jsx';
-import City from '../components/City.jsx';
-
+import './App.css';
+import Nav from '../components/Nav/Nav.jsx';
+// import Footer from '../components/Footer/Footer.jsx';
+import About from '../components/About/About.jsx';
+import Cards from '../components/Cards/Cards.jsx';
+import City from '../components/City/City.jsx';
+import Swal from 'sweetalert2';
 
 export default function App() {
 
@@ -34,7 +34,12 @@ export default function App() {
           };
           setCities(cities => [...cities, city]);
         } else {
-          alert("City not found");
+          // alert("City not found");
+          Swal.fire(
+            'City not found',
+            'Type again',
+            'question'
+          )
         }
       });
     }
