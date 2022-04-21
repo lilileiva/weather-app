@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Route } from "react-router-dom";
 import './App.css';
 import Nav from '../components/Nav/Nav.jsx';
-// import Footer from '../components/Footer/Footer.jsx';
+import Footer from '../components/Footer/Footer.jsx';
 import About from '../components/About/About.jsx';
 import Cards from '../components/Cards/Cards.jsx';
 import City from '../components/City/City.jsx';
@@ -76,7 +76,7 @@ export default function App() {
             <About />
           </Route>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
