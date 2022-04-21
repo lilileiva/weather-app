@@ -32,9 +32,16 @@ export default function App() {
             latitud: props.coord.lat,
             longitud: props.coord.lon
           };
-          setCities(cities => [...cities, city]);
+
+          let searchCity = cities.find(c => c.id === city.id);
+          if(searchCity) {
+            Swal.fire(
+              'City was already added',
+            )
+          } else {
+            setCities(cities => [...cities, city]);
+          }
         } else {
-          // alert("City not found");
           Swal.fire(
             'City not found',
             'Type again',
@@ -53,7 +60,7 @@ export default function App() {
       if(city.length > 0) {
           return city[0];
       } else {
-          return null;
+          return "No se encontró la ciudad";
       }
     }
 
