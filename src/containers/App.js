@@ -35,18 +35,21 @@ export default function App() {
 
           let searchCity = cities.find(c => c.id === city.id);
           if(searchCity) {
-            Swal.fire(
-              'City was already added',
-            )
+            Swal.fire({
+              confirmButtonColor: 'rgb(173, 222, 222)',
+              title: 'City was already added',
+              icon: 'warning'
+            })
           } else {
             setCities(cities => [...cities, city]);
           }
         } else {
-          Swal.fire(
-            'City not found',
-            'Type again',
-            'question'
-          )
+          Swal.fire({
+            confirmButtonColor: 'rgb(173, 222, 222)',
+            title: 'City not found',
+            text: 'Type again',
+            icon: 'question'
+          })
         }
       });
     }
@@ -60,7 +63,7 @@ export default function App() {
       if(city.length > 0) {
           return city[0];
       } else {
-          return "No se encontró la ciudad";
+          return "City not found";
       }
     }
 
