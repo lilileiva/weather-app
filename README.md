@@ -1,4 +1,7 @@
-## Weather App
+[![banner](https://user-images.githubusercontent.com/94813118/165432923-722239b7-306e-44cb-9d6f-d5fb05419f25.png)](http://www.linkedin.com/in/lilianaleiva)
+
+## Weather
+
 #### Responsive website where you can search weather status of different cities and countries
 This project use APIs from https://openweathermap.org/
 
