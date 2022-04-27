@@ -1,4 +1,4 @@
-[![banner](https://user-images.githubusercontent.com/94813118/165432923-722239b7-306e-44cb-9d6f-d5fb05419f25.png)](http://www.linkedin.com/in/lilianaleiva)
+[![banner](https://user-images.githubusercontent.com/94813118/165604475-073d9e79-1a6e-4615-8ea7-2a3201778df4.png)](http://www.linkedin.com/in/lilianaleiva)
 
 ## Weather
 
