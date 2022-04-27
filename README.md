@@ -3,7 +3,7 @@
 ## Weather
 
 #### Responsive website where you can search weather status of different cities and countries
-This project use APIs from https://openweathermap.org/
+This project uses APIs from https://openweathermap.org/
 
 ### Visit this Weather App
 LINK: https://weather-app-vercel-zeta.vercel.app/
