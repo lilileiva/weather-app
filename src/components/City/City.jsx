@@ -35,11 +35,9 @@ export default function City({city}) {
       <div className="card text-dark bg-light mb-3" >
         <div className="card-header">
             <h4 className="card-title">{city.name} </h4>
-
             <Link to="/">
               <button className="btn btn-danger">↩</button>
             </Link>
-
         </div>
         <div class="card-body">
             <div className="temp">

@@ -17,7 +17,7 @@ export default function SearchBar({onSearch}) {
 
     return (
         <form onSubmit={(e) => handleInputSubmit(e)}>
-                <div class="input-group">
+            <div class="input-group">
                 <input 
                     type="text"
                     placeholder="City..."

@@ -9,6 +9,10 @@
     border-radius: 10px;
 }
 
+.about button {
+    width: 120px
+}
+
 .about a{
     color:white
 }

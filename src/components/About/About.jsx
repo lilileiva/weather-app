@@ -10,13 +10,13 @@ export default function About() {
             <br/>
             <h4>You can reach me at:</h4>
             <br/>
-            <button type="button" class="btn btn-dark">
-                <img src={Github} />
+            <button type="button" className="btn btn-dark">
+                <img src={Github} alt="github logo" />
                 <a target="_blank" href="http://github.com/lilileiva">GitHub</a>
             </button>
             <br/>
-            <button type="button" class="btn btn-dark">
-                <img src={Linkedin} />
+            <button type="button" className="btn btn-dark">
+                <img src={Linkedin} alt="linkedin logo" />
                 <a target="_blank" href="http://www.linkedin.com/in/lilianaleiva">LinkedIn</a>
             </button>
             <br/>
