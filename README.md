@@ -1,7 +1,6 @@
 ## Weather App
+#### Responsive website where you can search weather status of different cities and countries
 This project use APIs from https://openweathermap.org/
-<br>
-You can search weather status of different cities and countries.
 
 ### Visit this Weather App
 LINK: https://weather-app-vercel-zeta.vercel.app/
