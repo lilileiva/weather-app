@@ -5,7 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+  background-image: url('./img/cloud.png');
+  background-repeat: initial;
+  background-size: 200px;
 }
 
 code {
