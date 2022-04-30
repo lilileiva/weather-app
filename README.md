@@ -16,8 +16,7 @@ LINK: https://weather-app-vercel-zeta.vercel.app/
 <li>Bootstrap</li>
 
 ### Project screens
-![image](https://user-images.githubusercontent.com/94813118/165400336-8b4f6c70-069c-4ddb-b443-9137b2f09fe7.png)
-![image](https://user-images.githubusercontent.com/94813118/165420183-91e8e45a-d19f-44bd-a166-bb05cbb14c3d.png)
-![image](https://user-images.githubusercontent.com/94813118/165400210-18e4d868-d1c4-49ed-9874-c6204e067146.png)
-
+![image](https://user-images.githubusercontent.com/94813118/166116957-f0ce720b-40f2-4a60-80d7-77a5938ad27f.png)
+![image](https://user-images.githubusercontent.com/94813118/166117010-5d20fcdf-f0be-4ca8-9396-3ef15c609f7b.png)
+![image](https://user-images.githubusercontent.com/94813118/166117021-0022f53a-67a4-4e60-aca8-633074f5beb3.png)
 
