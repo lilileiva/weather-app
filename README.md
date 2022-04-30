@@ -1,6 +1,9 @@
+[![banner](https://user-images.githubusercontent.com/94813118/165605352-22428713-9e84-4d98-93f0-cbddbfde0ebe.png)](http://www.linkedin.com/in/lilianaleiva)
+
 ## Weather App
+
 #### Responsive website where you can search weather status of different cities and countries
-This project use APIs from https://openweathermap.org/
+This project uses APIs from https://openweathermap.org/
 
 ### Visit this Weather App
 LINK: https://weather-app-vercel-zeta.vercel.app/
