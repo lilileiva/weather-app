@@ -5,8 +5,12 @@
 #### Responsive website where you can search weather status of different cities and countries
 This project uses APIs from https://openweathermap.org/
 
+---
+
 ### Visit this Weather App
 LINK: https://weather-app-vercel-zeta.vercel.app/
+
+---
 
 ### Coding technologies used in this project:
 <li>Javascript</li>
@@ -14,6 +18,8 @@ LINK: https://weather-app-vercel-zeta.vercel.app/
 <li>HTML</li>
 <li>CSS</li>
 <li>Bootstrap</li>
+
+---
 
 ### Project screens
 ![image](https://user-images.githubusercontent.com/94813118/166116957-f0ce720b-40f2-4a60-80d7-77a5938ad27f.png)
