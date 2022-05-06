@@ -3,6 +3,7 @@ import "./SearchBar.css"
 
 
 export default function SearchBar({onSearch}) {
+
     const [input, setInput] = useState('');
 
     const handleInputSubmit = (e) => {
@@ -22,8 +23,10 @@ export default function SearchBar({onSearch}) {
                     type="text"
                     placeholder="City..."
                     className="form-control"
+                    autoComplete="on"
+                    name="input"
                     value={input}
-                    onChange={handleInputChange}
+                    onChange={e => handleInputChange(e)}
                     required                  
                 />
                 <input type="submit" className="btn btn-outline-secondary" onChange={onSearch} value="Add" />
