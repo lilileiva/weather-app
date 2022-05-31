@@ -12,7 +12,7 @@ LINK: https://weather-app-vercel-zeta.vercel.app/
 
 ---
 
-### Coding technologies used in this project:
+### Tech stack:
 <li>Javascript</li>
 <li>React</li>
 <li>HTML</li>
