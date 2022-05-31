@@ -2,7 +2,7 @@
 
 ## Weather App
 
-#### Responsive website where you can search weather status of different cities and countries
+#### Website where you can search weather status of different cities and countries
 This project uses APIs from https://openweathermap.org/
 
 ---
