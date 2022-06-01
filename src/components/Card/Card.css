@@ -1,6 +1,7 @@
 .card {
     margin: 20px;
     float: left;
+    box-shadow: 4px 4px 5px rgb(125, 125, 125);
 }
 
 .btn-danger {
