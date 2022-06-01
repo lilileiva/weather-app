@@ -2,7 +2,7 @@
 
 ## Weather App
 
-#### Responsive website where you can search weather status of different cities and countries
+#### Website where you can search weather status of different cities and countries
 This project uses APIs from https://openweathermap.org/
 
 ---
@@ -12,7 +12,7 @@ LINK: https://weather-app-vercel-zeta.vercel.app/
 
 ---
 
-### Coding technologies used in this project:
+### Tech stack:
 <li>Javascript</li>
 <li>React</li>
 <li>HTML</li>
