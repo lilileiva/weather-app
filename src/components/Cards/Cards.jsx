@@ -23,7 +23,7 @@ export default function Cards({ cities, onClose, onSearch }) {
       <div className="no-cities">
         <div className="card text-dark bg-light mb-3" >
           <div className="card-header">
-            <h4 className="card-title">No cities available.</h4>
+            <h4 className="">No cities available.</h4>
           </div>
           <div class="card-body">
             <div className="temp">
